@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: hsl(204, 43%, 93%);
+}
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: grid;
+    border-radius: 7px;
+    background: white;
+    overflow: hidden;
+    grid-template-columns: 50% 50%;
+    margin: 2rem 1rem ;
+    grid-template-areas: "a a" "b c";
+}
+.join {
+    grid-area: a;
+    background: white;
+}
+.subscription {
+    grid-area: b;
+    background: hsl(179, 62%, 43%);
+}
+.why {
+    grid-area: c;
+    background: hsl(179, 62%, 50%);
+}
+.box {
+    padding: 40px;
+}
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+h3 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 12px;
+}
+.join p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.4;
+}
+h2 {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+h5 {
+    display: flex;
+    align-items:center;
+    padding-bottom: 10px;
+}
+h5 span.price {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+h5 span {
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+}
+.subscription p {
+    color: white;
+}
+.subscription a{
+    display: block;
+    text-align: center;
+    background: hsl(71, 73%, 54%);
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 15px;
+}
+.why ul {
+    list-style: none;
+}
+.why li {
+    color: #fff;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+/* reponsive feeling */
+@media only screen and (max-width: 375px){
+    .wrapper{
+        grid-template-columns: 100%;
+        grid-template-areas: "a""b""c";
+    }
+    .box {
+        padding: 30px;
+    }
+}
