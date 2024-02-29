@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@400:700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+ 
+    font-family: 'DM Sans', sans-serif;
+}
+
+ html, body {
+    background: hsl(27, 66%, 92%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+  
+}
+
+.chart{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+   height: 450px;
+}
+.chart-header, 
+.chart-body {
+        display: flex;
+        padding: 30px;
+        border-radius: 20px;
+        width: 540px;
+}
+
+.chart-header {
+    background: hsl(10, 79%, 65%);
+    height: 128px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.chart-body {
+    flex-direction: column;
+    background: #fff;
+    gap: 35px;
+
+}
+hr {
+    border:0.01px solid hsl(28, 10%, 53%); 
+    font-weight: lighter;
+}
+
+.total-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.month{
+    text-align: center;
+}
+.month h5:first-of-type{
+    color: hsl(28, 10%, 53%);
+}
+.total h5 {
+    color: hsl(28, 10%, 53%);
+    font-weight: 400;
+    font-size: 18px;
+}
+.chart-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+.bar div {
+    position: relative;
+    width: 50px;
+    border-radius: 5px;
+    background: hsl(10, 79%, 65%);
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+}
+.bar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.bar div:hover {
+        background: hsl(10, 79%, 65%);
+}
+
+.bar div:nth-child(1){
+    height: 50px;
+}
+.bar div:nth-child(1):hover #one{
+    display: block;
+}
+
+.bar div:nth-child(2){
+    height: 100px;
+}
+.bar div:nth-child(2):hover #two{
+    display: block;
+}
+
+
+.bar div:nth-child(3){
+    height: 150px;
+    background: hsl(186, 34%, 60%);
+}
+.bar div:nth-child(3):hover #three{
+    display: block;
+}
+
+.bar div:nth-child(4){
+    height: 80px;
+}
+.bar div:nth-child(4):hover #four{
+    display: block;
+}
+
+.bar div:nth-child(5){
+    height: 40px;
+}
+.bar div:nth-child(5):hover #fiv{
+    display: block;
+}
+.bar div:nth-child(6){
+    height: 120px;
+}
+.bar div:nth-child(6):hover #six{
+    display: block;
+}
+
+.bar div:nth-child(7){
+    height: 50px;
+}
+.bar div:nth-child(7):hover #seven{
+    display: block;
+}
+
+.labels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: hsl(28, 10%, 53%);
+    justify-content: space-between;
+    padding: 0 10px 0;
+}
+.labels p{
+    align-content: center;
+}
+
+.tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px !important;
+    height: auto !important;
+    background: hsl(25, 47%, 15%) !important;
+    border-radius: 4px;
+    padding: 5px;
+    color: #fff;
+    top: -40px;
+    margin-left: -5px;
+
+}
+#one{
+    display: none;
+}
+#two{
+    display: none;
+}
+#three{
+    display: none;
+}
+#four{
+    display: none;
+}
+#five{
+    display: none;
+}
+#six{
+    display: none;
+}
+#seven{
+    display: none;
+}
